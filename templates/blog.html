@@ -47,10 +47,6 @@ Blog Website | Blog
                             · ⏱ {{ post.reading_minute }} daqiqa
                         </p>
 
-                        <p class="excerpt">
-                            {{ post.content|truncatewords:30 }}
-                        </p>
-
                         <a class="read-more" href="{% url 'blog_detail' post.slug %}">
                             Batafsil o‘qish →
                         </a>

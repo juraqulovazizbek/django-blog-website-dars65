@@ -16,7 +16,7 @@
     </p>
 
     <div>
-        {{ post.content|linebreaks }}
+        {{ post.content_html|safe }}
     </div>
 
     {% if post.tg_link %}

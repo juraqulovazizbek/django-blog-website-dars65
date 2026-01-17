@@ -70,23 +70,23 @@ Blog Website | Yangi maqola
 
         <!-- Content -->
         <div class="form-group">
-            <label for="content">Maqola matni</label>
+            <label for="content_markdown">Maqola matni</label>
             <textarea
-                id="content"
-                name="content"
+                id="content_markdown"
+                name="content_markdown"
                 rows="10"
                 placeholder="Maqola matnini shu yerga yozing..."
                 required
             ></textarea>
-            {% if form.content.errors %}
+            {% if form.content_markdown.errors %}
                 <div class="error">
-                    {{ form.content.errors }}
+                    {{ form.content_markdown.errors }}
                 </div>
             {% endif %}
 
-            {% if form.content.help_text %}
+            {% if form.content_markdown.help_text %}
                 <p class="help">
-                    {{ form.content.help_text }}
+                    {{ form.content_markdown.help_text }}
                 </p>
             {% endif %}
         </div>
